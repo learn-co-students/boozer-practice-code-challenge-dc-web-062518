@@ -2,7 +2,9 @@ import React from 'react'
 
 const Cocktail = (props) => {
   return (
-    <li></li>
+    <li onClick= {(e)=>props.onClick(e.target.innerText)}>
+      {props.cocktail.name}
+    </li>
   )
 }
 
